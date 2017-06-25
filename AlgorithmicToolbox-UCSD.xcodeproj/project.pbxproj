@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CB9B6241F00419C0013D943 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CB9B6231F00419C0013D943 /* main.cpp */; };
+		0CB9B6361F0041F80013D943 /* fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CB9B6351F0041F80013D943 /* fibonacci.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +20,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0CB9B62C1F0041B60013D943 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CB9B6201F00419C0013D943 /* AlgorithmicToolbox-UCSD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AlgorithmicToolbox-UCSD"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB9B6231F00419C0013D943 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0CB9B62E1F0041B60013D943 /* week2-fibonacci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "week2-fibonacci"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB9B6351F0041F80013D943 /* fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacci.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0CB9B61D1F00419C0013D943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB9B62B1F0041B60013D943 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +58,7 @@
 		0CB9B6171F00419C0013D943 = {
 			isa = PBXGroup;
 			children = (
-				0CB9B6221F00419C0013D943 /* AlgorithmicToolbox-UCSD */,
+				0CB9B62F1F0041B60013D943 /* week2-fibonacci */,
 				0CB9B6211F00419C0013D943 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,16 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				0CB9B6201F00419C0013D943 /* AlgorithmicToolbox-UCSD */,
+				0CB9B62E1F0041B60013D943 /* week2-fibonacci */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0CB9B6221F00419C0013D943 /* AlgorithmicToolbox-UCSD */ = {
+		0CB9B62F1F0041B60013D943 /* week2-fibonacci */ = {
 			isa = PBXGroup;
 			children = (
-				0CB9B6231F00419C0013D943 /* main.cpp */,
+				0CB9B6351F0041F80013D943 /* fibonacci.cpp */,
 			);
-			path = "AlgorithmicToolbox-UCSD";
+			path = "week2-fibonacci";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +100,23 @@
 			productReference = 0CB9B6201F00419C0013D943 /* AlgorithmicToolbox-UCSD */;
 			productType = "com.apple.product-type.tool";
 		};
+		0CB9B62D1F0041B60013D943 /* week2-fibonacci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB9B6321F0041B60013D943 /* Build configuration list for PBXNativeTarget "week2-fibonacci" */;
+			buildPhases = (
+				0CB9B62A1F0041B60013D943 /* Sources */,
+				0CB9B62B1F0041B60013D943 /* Frameworks */,
+				0CB9B62C1F0041B60013D943 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "week2-fibonacci";
+			productName = "week2-fibonacci";
+			productReference = 0CB9B62E1F0041B60013D943 /* week2-fibonacci */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +127,11 @@
 				ORGANIZATIONNAME = Infinity;
 				TargetAttributes = {
 					0CB9B61F1F00419C0013D943 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZWDWGD5QUC;
+						ProvisioningStyle = Automatic;
+					};
+					0CB9B62D1F0041B60013D943 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = ZWDWGD5QUC;
 						ProvisioningStyle = Automatic;
@@ -111,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				0CB9B61F1F00419C0013D943 /* AlgorithmicToolbox-UCSD */,
+				0CB9B62D1F0041B60013D943 /* week2-fibonacci */,
 			);
 		};
 /* End PBXProject section */
@@ -120,7 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB9B6241F00419C0013D943 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB9B62A1F0041B60013D943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB9B6361F0041F80013D943 /* fibonacci.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +280,22 @@
 			};
 			name = Release;
 		};
+		0CB9B6331F0041B60013D943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZWDWGD5QUC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CB9B6341F0041B60013D943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZWDWGD5QUC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -249,6 +313,14 @@
 			buildConfigurations = (
 				0CB9B6281F00419C0013D943 /* Debug */,
 				0CB9B6291F00419C0013D943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0CB9B6321F0041B60013D943 /* Build configuration list for PBXNativeTarget "week2-fibonacci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB9B6331F0041B60013D943 /* Debug */,
+				0CB9B6341F0041B60013D943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
